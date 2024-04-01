@@ -1,0 +1,1139 @@
+{
+	"info": {
+		"_postman_id": "8d57720f-e1e5-424d-97e8-2553c22cbeb3",
+		"name": "ArtworkShowcase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33992221"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"iffath@example.com\",\r\n    \"password\":\"afridi@123\",\r\n    \"confirm_password\":\"afridi@123\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/account/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"account",
+						"register",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"iffath@example.com\",\r\n    \"password\":\"afridi@123\",\r\n    \"confirm_password\":\"afridi@123\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/account/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"account",
+								"register",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 20:54:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "528"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMjA5MTI5NiwiaWF0IjoxNzEyMDA0ODk2LCJqdGkiOiI1YjdkZjMzOTc2N2U0NmVmYWY5OWY3NTA4NzYyYjc0NiIsInVzZXJfaWQiOjExfQ.IK1oCmT65Zv_UlhYTw4zUW9Lxc10KWkraSJsnExENBk\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1MTk2LCJpYXQiOjE3MTIwMDQ4OTYsImp0aSI6IjQzOTU2NDAxMmM1MzRhYzI4MWFkNDJkZTNlYjUzN2MyIiwidXNlcl9pZCI6MTF9.NpJlVSzSgStO0drRgZVkMEReC4VNs9swnnCFrRBvOfI\"\n    },\n    \"msg\": \"Registration Successful\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"affan@example.com\",\r\n    \"password\":\"afridi@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/account/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"account",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"affan@example.com\",\r\n    \"password\":\"afridi@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/account/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"account",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 20:55:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "518"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"toekn\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMjA5MTMxNiwiaWF0IjoxNzEyMDA0OTE2LCJqdGkiOiI3OWI1NTkxYzA0ZWI0YjA0ODJjMTNhOTMzMGQzZGYxNiIsInVzZXJfaWQiOjh9.MG6xmWJiTqW1Uy7aOsO3TDERmJsX3_Se0uNfytTEaC4\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1MjE2LCJpYXQiOjE3MTIwMDQ5MTYsImp0aSI6ImY5MDYxOTlmMThmYjQ5MzZiYWUxY2UwNDdjOTM5ZmI0IiwidXNlcl9pZCI6OH0.4UrA0Jc0WQc0z7H0ENpcXz9ziYuP93CSVkqMjcX8CZI\"\n    },\n    \"msg\": \"Login Successful\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1MjE2LCJpYXQiOjE3MTIwMDQ5MTYsImp0aSI6ImY5MDYxOTlmMThmYjQ5MzZiYWUxY2UwNDdjOTM5ZmI0IiwidXNlcl9pZCI6OH0.4UrA0Jc0WQc0z7H0ENpcXz9ziYuP93CSVkqMjcX8CZI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/account/profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"account",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1MjE2LCJpYXQiOjE3MTIwMDQ5MTYsImp0aSI6ImY5MDYxOTlmMThmYjQ5MzZiYWUxY2UwNDdjOTM5ZmI0IiwidXNlcl9pZCI6OH0.4UrA0Jc0WQc0z7H0ENpcXz9ziYuP93CSVkqMjcX8CZI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/account/profile/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"account",
+								"profile",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 20:55:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 8,\n    \"email\": \"affan@example.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View Artists",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1MjE2LCJpYXQiOjE3MTIwMDQ5MTYsImp0aSI6ImY5MDYxOTlmMThmYjQ5MzZiYWUxY2UwNDdjOTM5ZmI0IiwidXNlcl9pZCI6OH0.4UrA0Jc0WQc0z7H0ENpcXz9ziYuP93CSVkqMjcX8CZI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/art/artists/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"art",
+						"artists",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Artists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1MjE2LCJpYXQiOjE3MTIwMDQ5MTYsImp0aSI6ImY5MDYxOTlmMThmYjQ5MzZiYWUxY2UwNDdjOTM5ZmI0IiwidXNlcl9pZCI6OH0.4UrA0Jc0WQc0z7H0ENpcXz9ziYuP93CSVkqMjcX8CZI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/art/artists/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"art",
+								"artists",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 20:56:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "983"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 9,\n        \"user\": 9,\n        \"name\": \"Aroshi\",\n        \"bio\": \"Donec at odio ac ipsum interdum pellentesque. Duis vel libero non velit ultricies venenatis sed at sem.\",\n        \"artwork\": [\n            {\n                \"id\": 12,\n                \"artist\": 9,\n                \"title\": \"Mona Lisa\",\n                \"description\": \"The Mona Lisa is a portrait painting by Italian artist Leonardo da Vinci.\",\n                \"creation_date\": \"2021-07-01\",\n                \"image_url\": \"https://upload.wikimedia.org/Mona_Lisa.jpg\"\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"user\": 8,\n        \"name\": \"Affan(edited)\",\n        \"bio\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.\",\n        \"artwork\": [\n            {\n                \"id\": 11,\n                \"artist\": 8,\n                \"title\": \"The Persistence of Memory\",\n                \"description\": \"The Persistence of Memory is a surrealistic painting.\",\n                \"creation_date\": \"2020-06-01\",\n                \"image_url\": \"https://upload.wikimedia.org/ersistence_of_Memory.jpg\"\n            },\n            {\n                \"id\": 10,\n                \"artist\": 8,\n                \"title\": \"Starry Night(Updated)\",\n                \"description\": \"Starry Night is an oil on canvas painting by Dutch impressionist painter\",\n                \"creation_date\": \"2023-06-18\",\n                \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Edit Artist",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1Njk4LCJpYXQiOjE3MTIwMDUzOTgsImp0aSI6ImRmYTFlODI4NjI3ZjQzNWQ5OTJkNjgyMzUxNzQxYmE3IiwidXNlcl9pZCI6OH0.tE2yngk1AeZk6Ac9DXKp94Y-6AaTSv0qMJSPPefuKKk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 8,\r\n        \"user\": 8,\r\n        \"name\": \"Affan(edited)\",\r\n        \"bio\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.\",\r\n        \"artwork\": [\r\n            {\r\n                \"id\": 11,\r\n                \"artist\": 8,\r\n                \"title\": \"The Persistence of Memory\",\r\n                \"description\": \"The Persistence of Memory is a surrealistic painting.\",\r\n                \"creation_date\": \"2020-06-01\",\r\n                \"image_url\": \"https://upload.wikimedia.org/ersistence_of_Memory.jpg\"\r\n            },\r\n            {\r\n                \"id\": 10,\r\n                \"artist\": 8,\r\n                \"title\": \"Starry Night(Updated)\",\r\n                \"description\": \"Starry Night is an oil on canvas painting by Dutch post-impressionist painter\",\r\n                \"creation_date\": \"2023-06-18\",\r\n                \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/art/artists/8/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"art",
+						"artists",
+						"8",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Artist",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1Njk4LCJpYXQiOjE3MTIwMDUzOTgsImp0aSI6ImRmYTFlODI4NjI3ZjQzNWQ5OTJkNjgyMzUxNzQxYmE3IiwidXNlcl9pZCI6OH0.tE2yngk1AeZk6Ac9DXKp94Y-6AaTSv0qMJSPPefuKKk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 8,\r\n        \"user\": 8,\r\n        \"name\": \"Affan(edited)\",\r\n        \"bio\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.\",\r\n        \"artwork\": [\r\n            {\r\n                \"id\": 11,\r\n                \"artist\": 8,\r\n                \"title\": \"The Persistence of Memory\",\r\n                \"description\": \"The Persistence of Memory is a surrealistic painting.\",\r\n                \"creation_date\": \"2020-06-01\",\r\n                \"image_url\": \"https://upload.wikimedia.org/ersistence_of_Memory.jpg\"\r\n            },\r\n            {\r\n                \"id\": 10,\r\n                \"artist\": 8,\r\n                \"title\": \"Starry Night(Updated)\",\r\n                \"description\": \"Starry Night is an oil on canvas painting by Dutch post-impressionist painter\",\r\n                \"creation_date\": \"2023-06-18\",\r\n                \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/art/artists/8/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"art",
+								"artists",
+								"8",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 21:04:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "606"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 8,\n    \"user\": 8,\n    \"name\": \"Affan(edited)\",\n    \"bio\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.\",\n    \"artwork\": [\n        {\n            \"id\": 10,\n            \"artist\": 8,\n            \"title\": \"Starry Night(Updated)\",\n            \"description\": \"Starry Night is an oil on canvas painting by Dutch impressionist painter\",\n            \"creation_date\": \"2023-06-18\",\n            \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\n        },\n        {\n            \"id\": 11,\n            \"artist\": 8,\n            \"title\": \"The Persistence of Memory\",\n            \"description\": \"The Persistence of Memory is a surrealistic painting.\",\n            \"creation_date\": \"2020-06-01\",\n            \"image_url\": \"https://upload.wikimedia.org/ersistence_of_Memory.jpg\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Artworks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1Njk4LCJpYXQiOjE3MTIwMDUzOTgsImp0aSI6ImRmYTFlODI4NjI3ZjQzNWQ5OTJkNjgyMzUxNzQxYmE3IiwidXNlcl9pZCI6OH0.tE2yngk1AeZk6Ac9DXKp94Y-6AaTSv0qMJSPPefuKKk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"artist\": 8,\r\n    \"title\": \"The Birth of Venus\",\r\n    \"description\": \"The Birth of Venus is a masterpiece painting by Italian artist Sandro Botticelli\",\r\n    \"creation_date\": \"2020-01-01\",\r\n    \"image_url\": \"https://upload.wikimedia.org/wikipedia/commons/.jpg\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/art/artworks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"art",
+						"artworks",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Artworks",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1Njk4LCJpYXQiOjE3MTIwMDUzOTgsImp0aSI6ImRmYTFlODI4NjI3ZjQzNWQ5OTJkNjgyMzUxNzQxYmE3IiwidXNlcl9pZCI6OH0.tE2yngk1AeZk6Ac9DXKp94Y-6AaTSv0qMJSPPefuKKk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"artist\": 8,\r\n    \"title\": \"The Birth of Venus\",\r\n    \"description\": \"The Birth of Venus is a masterpiece painting by Italian artist Sandro Botticelli\",\r\n    \"creation_date\": \"2020-01-01\",\r\n    \"image_url\": \"https://upload.wikimedia.org/wikipedia/commons/.jpg\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/art/artworks/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"art",
+								"artworks",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 21:06:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 14,\n    \"artist\": 8,\n    \"title\": \"The Birth of Venus\",\n    \"description\": \"The Birth of Venus is a masterpiece painting by Italian artist Sandro Botticelli\",\n    \"creation_date\": \"2020-01-01\",\n    \"image_url\": \"https://upload.wikimedia.org/wikipedia/commons/.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List Artworks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1Njk4LCJpYXQiOjE3MTIwMDUzOTgsImp0aSI6ImRmYTFlODI4NjI3ZjQzNWQ5OTJkNjgyMzUxNzQxYmE3IiwidXNlcl9pZCI6OH0.tE2yngk1AeZk6Ac9DXKp94Y-6AaTSv0qMJSPPefuKKk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/art/artworks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"art",
+						"artworks",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Artworks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA1Njk4LCJpYXQiOjE3MTIwMDUzOTgsImp0aSI6ImRmYTFlODI4NjI3ZjQzNWQ5OTJkNjgyMzUxNzQxYmE3IiwidXNlcl9pZCI6OH0.tE2yngk1AeZk6Ac9DXKp94Y-6AaTSv0qMJSPPefuKKk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/art/artworks/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"art",
+								"artworks",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 21:07:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "933"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 11,\n        \"artist\": 8,\n        \"title\": \"The Persistence of Memory\",\n        \"description\": \"The Persistence of Memory is a surrealistic painting.\",\n        \"creation_date\": \"2020-06-01\",\n        \"image_url\": \"https://upload.wikimedia.org/ersistence_of_Memory.jpg\"\n    },\n    {\n        \"id\": 12,\n        \"artist\": 9,\n        \"title\": \"Mona Lisa\",\n        \"description\": \"The Mona Lisa is a portrait painting by Italian artist Leonardo da Vinci.\",\n        \"creation_date\": \"2021-07-01\",\n        \"image_url\": \"https://upload.wikimedia.org/Mona_Lisa.jpg\"\n    },\n    {\n        \"id\": 10,\n        \"artist\": 8,\n        \"title\": \"Starry Night(Updated)\",\n        \"description\": \"Starry Night is an oil on canvas painting by Dutch impressionist painter\",\n        \"creation_date\": \"2023-06-18\",\n        \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\n    },\n    {\n        \"id\": 14,\n        \"artist\": 8,\n        \"title\": \"The Birth of Venus\",\n        \"description\": \"The Birth of Venus is a masterpiece painting by Italian artist Sandro Botticelli\",\n        \"creation_date\": \"2020-01-01\",\n        \"image_url\": \"https://upload.wikimedia.org/wikipedia/commons/.jpg\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Artworks",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA2MDY2LCJpYXQiOjE3MTIwMDU3NjYsImp0aSI6IjExY2Q5NzE0ZTMyZDQ3YmE4NWZkMGJkN2JjZGUxYTc2IiwidXNlcl9pZCI6OH0.OlW3fZ38MBOssAq9jJYKtFfIc_VoO9uCYU8HHRMclHg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 10,\r\n        \"artist\": 8,\r\n        \"title\": \"Starry Night(Updated)\",\r\n        \"description\": \"Starry Night is an oil on canvas painting by Dutch impressionist painter\",\r\n        \"creation_date\": \"2023-06-18\",\r\n        \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/art/artworks/10/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"art",
+						"artworks",
+						"10",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Artworks",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDA2MDY2LCJpYXQiOjE3MTIwMDU3NjYsImp0aSI6IjExY2Q5NzE0ZTMyZDQ3YmE4NWZkMGJkN2JjZGUxYTc2IiwidXNlcl9pZCI6OH0.OlW3fZ38MBOssAq9jJYKtFfIc_VoO9uCYU8HHRMclHg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 10,\r\n        \"artist\": 8,\r\n        \"title\": \"Starry Night(Updated)\",\r\n        \"description\": \"Starry Night is an oil on canvas painting by Dutch impressionist painter\",\r\n        \"creation_date\": \"2023-06-18\",\r\n        \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/art/artworks/10/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"art",
+								"artworks",
+								"10",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 01 Apr 2024 21:10:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"artist\": 8,\n    \"title\": \"Starry Night(Updated)\",\n    \"description\": \"Starry Night is an oil on canvas painting by Dutch impressionist painter\",\n    \"creation_date\": \"2023-06-18\",\n    \"image_url\": \"https://upload.wikimedia.org/Starry_NightGoogle_Art_Project.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Artworks",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyMDAxMjkyLCJpYXQiOjE3MTIwMDA5OTIsImp0aSI6ImVkNDU5OGJiYmQ2ZTQ2NmQ4MjVkMzk5YmE2MWZkNTM3IiwidXNlcl9pZCI6OH0.2dX8IwWX9H8Dpc9qhaLzVVTTtmF-tq9Gf_NN6dAs2YY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/art/artworks/12/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"art",
+						"artworks",
+						"12",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
